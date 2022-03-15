@@ -124,7 +124,7 @@ Ele basicamente cria uma conexão entre dois pontos segura usando a criptografia
 
   
 
-#### Criptografia Simétrica:
+### Criptografia Simétrica:
 Utiliza uma chave única para cifrar e decifrar a mensagem. Nesse caso o segredo é compartilhado.
 O ciframento de uma mensagem (processo em que um conteúdo é criptografado) é baseado em 2 componentes:
 
@@ -136,7 +136,7 @@ O algoritmo trabalha junto com a chave, de forma que eles tornam um conteúdo si
 
 A criptografia simétrica faz uso de uma única chave, que é compartilhada entre o emissor e o destinatário de um conteúdo. Essa chave é uma cadeia própria de bits, que vai definir a forma como o algoritmo vai cifrar um conteúdo.
 
-#### Assimétrica:
+### Assimétrica:
 
 A criptografia assimétrica, também conhecida como criptografia de chave pública, é baseada em 2 tipos de chaves de segurança, uma privada e a outra pública. Elas são usadas para cifrar mensagens e verificar a identidade de um usuário.
 
@@ -198,3 +198,23 @@ O arquivo package.json é o ponto de partida de qualquer projeto NodeJS. Ele é 
 Module é uma coleção de funções e objetos do JavaScript que podem ser utilizados por aplicativos externos. Descrever um trecho de código como um módulo se refere menos ao que o código é do que aquilo que ele faz qualquer arquivo Node.js pode ser considerado um módulo caso suas funções e dados sejam feitos para programas externos.
 
 -   Dividi o programa em várias partes (funções)
+### O que é npm?
+**npm** (gerenciador de pacotes do nó) é o gerenciador de dependências/pacotes que você obtém ao instalar o Node.js. Ele fornece uma maneira para os desenvolvedores instalarem pacotes globalmente e localmente.
+### O que é npx?
+O npx é pré-empacotado com o npm. Então é praticamente um padrão hoje em dia.
+O npx também é uma ferramenta CLI cujo objetivo é facilitar a instalação e o gerenciamento de dependências hospedadas no registro npm.
+### Diferença npm vs npx?
+**npm** é o gerenciador de pacotes node, ele irá instalar na sua máquina um pacote para que você possa utiliza-lo em outros projetos sem precisar baixar novamente.
+
+já o **npx** ele irá usar o pacote sem precisar baixar em sua máquina, sendo assim você irá instalar um pacote no seu projeto ou até mesmo usar esse pacote, sem baixar os arquivos em sua máquina.
+
+## Merge VS REBESE 
+Basicamente o **git merge** e o **git rebase** servem para a mesma coisa: **mesclar alterações de duas branches diferentes**.
+#### Branches oq é?  
+
+
+> Ramificação, em controle de versão e gerenciamento de configuração de software, é a duplicação de um objeto sob controle de versão.
+
+O **merge**, na maioria das vezes, gera um novo commit, o que pode complicar o histórico, mas nunca o reescreve. (mas é mais seguro)
+
+Já o **rebase** deixa o histórico linear e mais simples, mas alguns commits são reescritos, é muito útil para não “sujar” o histórico do repositório (mas possui mais riscos).
