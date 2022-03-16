@@ -279,7 +279,12 @@ São vários repositórios autônomos e independentes, um para cada desenvolvedo
 
 ## Arquivo de texto vs arquivos binarios
 
-Nos arquivos texto os dados são representados linha à linha. Na prática é uma sequência de bytes representando caracteres. Assim, o conjunto de bytes forma um texto.
+Nos arquivos **texto** os dados são representados linha à linha. Na prática é uma sequência de bytes representando caracteres. Assim, o conjunto de bytes forma um texto.
 
-Já os arquivos binários são representados por uma sequência de bytes sem o conceito de quebra de linha. Ele armazena o dado literal, ou seja, não são caracteres.
+Já os arquivos **binários** são representados por uma sequência de bytes sem o conceito de quebra de linha. Ele armazena o dado literal, ou seja, não são caracteres.
+
+**Na prática arquivos textos são abertos por editores de texto simples, enquanto que arquivos binários precisam ser abertos por programas específicos**
+### Exemplo:
+   - Texto (qualquer arquivo que só armazene texto).txt, .xml, .bat
+    - Binário (possuem uma codificação de bytes especifica) .doc, .exe, .zip 
 
