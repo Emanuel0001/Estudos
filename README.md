@@ -218,3 +218,68 @@ Basicamente o **git merge** e o **git rebase** servem para a mesma coisa: **mesc
 O **merge**, na maioria das vezes, gera um novo commit, o que pode complicar o histórico, mas nunca o reescreve. (mas é mais seguro)
 
 Já o **rebase** deixa o histórico linear e mais simples, mas alguns commits são reescritos, é muito útil para não “sujar” o histórico do repositório (mas possui mais riscos).
+
+
+## Fast-Forward
+
+Move o rótulo da branch master para o commit “feature". Por isso, o nome dessa estratégia é fast forward (em português avanço rápido), pois é simplesmente uma alteração de ponteiro.
+
+## no-fast forward
+
+É um erro que ocorre quando se faz um commit em um projeto e depois envia acidentalmente esse commit, ignorando a revisão de código, para outro projeto, isso falhará com a mensagem de erro “non-fast-forward”. Para corrigir esse problema, voce deve verificar a especificação de push e verifivcar se está enviando o commit para o projeto correto
+
+  
+  
+  
+  
+  
+
+## Rebese vs squash
+
+**Merge Rebase:** Isso move todo o branch do recurso para começar na ponta do branch master, incorporando efetivamente todos os novos commits no master
+
+Master A → B → C -->(F) → (G)
+
+Feature A → B → C --> (D) → (E)
+
+MASTER A → B → C → (F) → (G) → (D) → (E)
+
+O **rebase** deixa o histórico linear e mais simples, mas alguns commits são reescritos, é muito útil para não “sujar” o histórico do repositório (mas possui mais riscos).
+
+**Merge Squash:** mantém as alterações, mas omite os commits individuais do histórico
+
+Master A → B → C
+
+Feature A → B → C (D) → (E) |
+
+MASTER A → B → C → (F)
+
+  
+
+## Git remote / qual é o remote do meu repositório ?
+
+Um controle remoto no Git é um repositório comum que todos os membros da equipe usam para trocar suas alterações. Na maioria dos casos, esse repositório remoto é armazenado em um serviço de hospedagem de código como o GitHub ou em um servidor interno. Ao contrário de um repositório local, um remoto normalmente não fornece uma árvore de arquivos do estado atual do projeto.
+
+origin git@github.com:Emanuel0001/sistema-de-usuario.git (fetch)
+
+origin git@github.com:Emanuel0001/sistema-de-usuario.git (push)
+
+  
+  
+
+## O que é uma aplicação distribuída?
+
+Uma aplicação que executa simultaneamente em várias máquinas Um grupo de processos que executa em máquinas distintas e trabalha de forma coordenada e cooperativa para realizar uma determinada tarefa
+
+São vários repositórios autônomos e independentes, um para cada desenvolvedor. Cada repositório possui uma área de trabalho acoplada e as operações commit e update acontecem localmente entre os dois.
+
+  
+  
+  
+
+## Arquivo de texto vs arquivos binarios
+
+Nos arquivos texto os dados são representados linha à linha. Na prática é uma sequência de bytes representando caracteres. Assim, o conjunto de bytes forma um texto.
+
+Já os arquivos binários são representados por uma sequência de bytes sem o conceito de quebra de linha. Ele armazena o dado literal, ou seja, não são caracteres.
+
