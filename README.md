@@ -285,6 +285,7 @@ Já os arquivos **binários** são representados por uma sequência de bytes sem
 
 **Na prática arquivos textos são abertos por editores de texto simples, enquanto que arquivos binários precisam ser abertos por programas específicos**
 ### Exemplo:
-   - Texto (qualquer arquivo que só armazene texto).txt, .xml, .bat
-    - Binário (possuem uma codificação de bytes especifica) .doc, .exe, .zip 
+
+   #### Texto (qualquer arquivo que só armazene texto).txt, .xml, .bat
+#### Binário (possuem uma codificação de bytes especifica) .doc, .exe, .zip 
 
