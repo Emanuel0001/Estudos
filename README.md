@@ -289,3 +289,51 @@ Já os arquivos **binários** são representados por uma sequência de bytes sem
    #### Texto (qualquer arquivo que só armazene texto).txt, .xml, .bat
 #### Binário (possuem uma codificação de bytes especifica) .doc, .exe, .zip 
 
+## API
+
+{“temperatura”:20, “unidade”: Celsius}
+
+#### REST(Representational State Transfer) — Transferencia de estado representacional
+
+-   API REST serve para a comunicação entre aplicações para estabelecer o consumo de informações de forma rápida e segura.
+    
+-   Utilizar API REST significa utilizar uma API para o consumo de dados em [aplicações back-end](https://blog.betrybe.com/carreira/front-end-e-back-end/), de modo que essa comunicação seja estabelecida utilizando padrões definidos no estilo arquitetural REST.
+    
+
+A API liga as diversas funções em um site de maneira que possam ser utilizadas em outras aplicações.
+ ## React State
+
+O estado ( state ) de um componente React tem uma função muito simples e específica. Ele é uma propriedade do componente onde colocamos dados que, quando mudados, devem causar uma nova renderização. Simples assim. Se deve causar mudança fica no estado, se não deve causar uma mudança, não fica.
+
+-   State funciona como se fosse uma variável , sempre que modificado o conteúdo , os elementos que ele utiliza sofre alteração.
+    
+-   O state é um elemento privado, sendo assim, apenas terá acesso dentro do componente.
+## O que é middleware e para que ele serve?
+
+Middleware é um software que permite um ou mais tipos de comunicação ou conectividade entre dois ou mais aplicativos e/ou componentes de aplicativos em uma rede distribuída.
+
+Com o middleware, os desenvolvedores podem criar aplicações com mais facilidade e eficiência, pois esse tipo de software tem o papel de conectar aplicações, dados e usuários.
+
+Middleware é um software que fornece serviços e recursos comuns a aplicações. Gerenciamento de dados, serviços de aplicações, sistema de mensageria, autenticação e gerenciamento de APIs são recursos comumente operados por um software de middleware.
+
+  
+
+## O que é CORS?
+
+CORS é o acrônimo de Cross-origin Resource Sharing (Compartilhamento de Recursos de Origem Cruzada). Na prática, ele informa aos navegadores se um determinado recurso pode ou não ser acessado.
+
+  
+
+Quando realizamos uma requisição a um servidor, os navegadores utilizam uma política de segurança chamada [same-origin](https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy) (ou mesma origem), que só autoriza a troca de informações se os envolvidos tiverem origens iguais…
+
+Em resumo, a política same-origin exige que ambas as partes tenham a mesma origem para se comunicarem.
+
+## O que é origem?
+
+A origem de um website é uma composição envolvendo:
+
+-   Protocolo;
+    
+-   Host;
+    
+-   Porta.
