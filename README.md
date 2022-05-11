@@ -226,9 +226,9 @@ Move o rótulo da branch master para o commit “feature". Por isso, o nome dess
 
 ## no-fast forward
 
-É um erro que ocorre quando se faz um commit em um projeto e depois envia acidentalmente esse commit, ignorando a revisão de código, para outro projeto, isso falhará com a mensagem de erro “non-fast-forward”. Para corrigir esse problema, voce deve verificar a especificação de push e verifivcar se está enviando o commit para o projeto correto
+O --no-ff sinalizador faz com que a mesclagem sempre crie um novo objeto de confirmação, mesmo que a mesclagem possa ser executada com um avanço rápido. Isso evita a perda de informações sobre a existência histórica de uma ramificação de recurso e agrupa todos os commits que juntos adicionaram o recurso.
+A --no-ff opção é útil quando você deseja ter uma noção clara de sua ramificação de recurso. sem --no-ff, é impossível ver no histórico do Git quais dos objetos de confirmação juntos implementaram um recurso, você teria que ler manualmente todas.
 
-  
   
   
   
@@ -337,3 +337,24 @@ A origem de um website é uma composição envolvendo:
 -   Host;
     
 -   Porta.
+## Pesquisar sobre Cookies -  O que é?
+
+Um cookie, no âmbito do protocolo de comunicação HTTP usado na Internet, é um pequeno arquivo de computador ou pacote de dados enviados por um site de Internet para o navegador do usuário, quando o utilizador visita o site. Cada vez que o usuário visita o site novamente, o navegador envia o cookie de volta para o servidor para notificar atividades prévias do usuário.
+
+## Funcionamento
+
+Quando o servidor deseja activar um cookie no cliente, envia uma linha no cabeçalho HTTP iniciada por Set-Cookie:A partir desse momento, consoante as opções especificadas pelo cookie, o cliente irá enviar no seu cabeçalho HTTP dos pedidos uma linha contendo os cookies relevantes, iniciada por Cookie: ....
+
+## Quais os tipos de cookies?
+
+Existem vários tipos de cookies. Enquanto alguns facilitam a sua vida, permitindo que você seja reconhecido mais rapidamente por sites, outros analisam o comportamento de navegação para gerar dados para serem utilizados como ferramentas de marketing por dados.
+
+###  Cookies de sessão
+
+Também chamado de cookie transitório, é apagado quando você fecha o navegador de internet. Ele é armazenado na memória temporária do computador e não é retido depois que o navegador é encerrado. Os cookies de sessão não coletam informações do seu computador. Eles normalmente armazenam informações na forma de uma identificação que não coleta dados pessoais do usuário.
+
+###  Cookies persistentes
+
+Também chamado de Cookie permanente, é armazenado em seu disco rígido até expirar (cookies persistentes são definidos com datas de expiração) ou até você excluir.
+
+Os Cookies persistentes são usados para coletar informações de identificação sobre o usuário, como comportamento de navegação na internet ou preferências para um site específico.
