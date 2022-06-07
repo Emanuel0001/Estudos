@@ -420,3 +420,109 @@ Display flex surgiu para resolver problemas com criação de telas flexíveis e 
 
 **Justify-content; space-around:** 
 > Vai respeitar a margem, vai distribuir a margem
+
+## Async / await
+
+#### 18/05/2022
+
+Async e await, foram implementaas do ES2017, são sintaxe que simplifica a programação assíncrona, facilitando o fluxo de escrita, Eles trabalham com código baseado em Promises, Porém esconde as promessas para leitura fluída. Só é possível usar await quando declaramos async.
+
+#### Exemplo:
+
+		async function  getUser(userName) {
+
+		let resposta = await  fetch(`https://api.com/api/user	
+		/${userName}`);
+
+		let userData = await resposta.json( );
+
+	}
+
+#### Diferenças entre then, async e await?
+
+**Then:** vai executar uma função logo depois que sua tarefa terminar
+
+**Async await:** vai dizer que sua tarefa é assíncrona e precisa de mais tempo para terminar
+
+**Await:** vai dizer que você deve esperar a tarefa ser concluida para continuar
+
+  
+  
+
+## Token de autenticação
+
+#### 23/05/2022
+
+Na autenticação por token, o usuário insere o login e senha na plataforma o que gera um token que permite que o usuario possa navegar pelos recursos do seu interesse, dentro de um prazo determinado, sem a necessidade de utilizar os dados do login novamente. A autenticação é um processo utilizado pelas plataformas para que possa ser confirmada a identidade do usuario, ela identifica quem solicita o acesso ao sistema, a fim de garantir que a pessoa está tentando entrar no servidor, é quem ela diz ser.
+
+**O que é um token?**  Simplificando o token é uma sequência de dados que representa outra coisa, como uma identidade.
+
+ #### Processos da autenticação por token:
+
+		1.  O usuário envia as credenciais de acesso para o servidor;
+    
+		2.  O servidor faz a autenticação das credenciais e posteriormente gera um token;
+    
+		3.  A plataforma envia o token automaticamente para o usuário;
+    
+		4.  O usuário salva o token e o envia por meio de header (cabeçalho) sempre que fizer uma nova requisição;
+    
+		5.  A cada requisição, o servidor avalia se o token é válido ou não;
+    
+		6.  O servidor pode contar com um endpoint capaz de renovar o token.
+		 
+    
+
+###  JSON Web Token
+
+É um método padrão para realizar autenticação entre duas partes por meio de um token assinado que autentica uma requisição web. permite uma comunicação segura e protegida entre duas partes. Os dados são verificados com uma assinatura digital e, se forem enviados via HTTP, a criptografia mantém os dados seguros.
+
+## Variáveis de Ambiente
+
+#### 26/05/2022
+
+No desenvolvimento de software, o que temos em comum são dados sensíveis, como informação do banco de dados, chaves de API’s, Secret Keys entre outras informações. Essas informações não podem ficar dando sopa por aí no repositório. Então para lidar com esse problema utilizamos variáveis de Ambiente.
+
+### Dotenv
+
+Dotenv é um módulo de dependência zero que carrega variáveis ​​de ambiente de um .env arquivo em process.env. O armazenamento da configuração no ambiente separado do código é baseado na metodologia The Twelve-Factor App .
+
+**Como instalar?** 
+			
+				 npm install dotenv --save
+
+**Uso:**
+	 
+		Crie um .env arquivo na raiz do seu projeto:
+
+		CHAVE_NOME = " SUACHAVEAQUI "
+
+**Como importar?**
+
+		import 'dotenv/config'
+
+		Const dotenv require('dotenv/config.js')
+
+## Pesquisa Sobre Kanban
+
+#### 02/06/2022
+
+#### O que é Kanban?
+
+O Kanban, uma palavra japonesa que significa cartões ou sinal, é conhecido como um método organizacional e de gestão visual que basicamente controla as tarefas de uma equipe. É um sistema ágil de gestão de produção ou de tarefas que funciona de maneira visual e dinâmica. Com ele, é possível organizar o fluxo de trabalho em colunas e cartões, de modo que toda a equipe visualize o fluxo do início ao fim, e identifique se há gargalos ou maneiras de otimizar o processo.
+
+### Objetivo:
+
+O kanban serve para melhorar a performance da sua empresa ou do seu trabalho priorizando a produtividade e a organização das entregas. Tem como objetivo proporcionar um trabalho mais transparente e direcionado.
+
+### Funcionamento:
+
+Normalmente o processo é dividido em 3 colunas, isso muda conforme as necessidades de cada projeto, adicionando mais colunas.
+
+— **Para fazer** — — **Fazendo** — — **Feito** —
+
+**Para fazer  :** Ficam as tarefas que precisam ser feitas
+
+**Fazendo :** Ficam as tarefas que estão sendo feitas
+
+**Feito :** Ficam as tarefas que já foram finalizadas.
