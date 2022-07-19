@@ -526,3 +526,144 @@ Normalmente o processo é dividido em 3 colunas, isso muda conforme as necessida
 **Fazendo :** Ficam as tarefas que estão sendo feitas
 
 **Feito :** Ficam as tarefas que já foram finalizadas.
+
+
+## Seletores mais específicos e herança
+
+```
+<img>
+
+<figure>
+    <img src="img/matriz-musicdot" alt="Foto da matriz da"> 
+</figure>
+```
+Aplicando largura de 300px para todas as tags img
+	
+
+      img {
+         width: 300px;
+        }
+
+ 
+ para aplicarmos de forma mais especifica aplicando apenas para tag filha :
+   ``
+
+    figure img {
+        width: 300px;
+        }
+ 
+**CSS - Exemplo:**
+
+```
+#matriz-musicdot {
+    width: 300px;
+}
+
+```
+Não é recomendado uso de id para estilização de elementos ja que o atributo faz referência única, quando queremos estilizar elementos específicos é melhor utilizar class=" ". O comportamento é o mesmo no CSS, o class foi feito para ser usado no CSS e no javaScript.
+
+**CSS - Exemplo:**
+
+    .matriz-musicdot {
+        width: 300px;}
+
+### Grau de especificidade de um seletor
+O grau de especificidade de um seletor é algo muito importante. É a prioridade de um seletor pelo navegador. para entender estas regras ao criar seletor de tag:  pontuação se torna **1**. Quando usamos um seletor de classe sua pontuação se torna **10**. Quando usamos um seletor de id sua pontuação se torna **100**. Ao fim, o navegador soma a pontuação dos seletores aplicados à um elemento, e as propriedades com o seletor de maior pontuação são as que valem.
+
+```
+<body>
+    <p class="paragrafo" id="paragrafo-rosa">Texto</p>
+</body>
+
+p { /* Pontuação 1 */
+    color: blue;
+}
+
+.paragrafo { /* Pontuação 10 */
+    color: red;
+}
+
+#paragrafo-rosa { /* Pontuação 100 */
+    color: pink;
+}
+```
+
+No exemplo acima o parágrafo vai ficar com a cor rosa porque o seletor que tem a cor rosa é o seletor de maior pontuação.
+
+### Herança
+
+A cascata do CSS, significa justamente a possibilidade de elementos filhos herdarem características de estilização de elementos superiores.
+
+ exemplo a seguir:
+
+```
+<body>
+    <p>Uma breve explicação de algo com um <a href="https://google.com.br">link</a> para uma referência de outra página</p>
+    <figure>
+        <img src="img/foto" alt="Uma foto">
+        <figcaption>Uma foto</figcaption>
+    </figure>
+</body>
+
+```
+ Uma maneira que podemos fazer é selecionar todas as tags que contém text (`<p>`, `<a>` e `<figcaption>`) e colocar a família de fonte que queremos:
+
+```
+p {
+    font-family: 'Helvetica', sans-serif;
+}
+
+a {
+    font-family: 'Helvetica', sans-serif;
+}
+
+figcaption {
+    font-family: 'Helvetica', sans-serif;
+}
+```
+
+Ao invés de colocar essa propriedade em cada um dos elementos, podemos colocar o elemento superior a estas tags, neste caso é o `<body>`.
+
+```
+body {
+    font-family: 'Helvetica', sans-serif;
+}
+```
+##  O valor inherit
+
+Imagine a seguinte divisão com uma imagem:
+
+**Exemplo:**
+
+```
+<div>
+    <img src="box-model.png" alt="box model">
+</div>
+```
+
+```
+div {
+    width: 30px;
+    height: 30px;
+}
+```
+
+Queremos que a imagem preencha todo o espaço da `<div>`, mas as propriedades `width` e `height` não são aplicadas em cascata, sendo assim, somos obrigados a definir o tamanho da imagem manualmente:
+
+```
+img {
+    width: 30px;
+    height: 30px;
+}
+```
+
+Esta não é uma solução sustentável, porque, caso alterarmos o tamanho da `<div>`, teremos que lembrar de alterar também o tamanho da imagem. Uma forma de resolver este problema é utilizando o valor **inherit** para as propriedades `width` e `height` da imagem:
+
+```
+img {
+    width: inherit;
+    height: inherit;
+}
+```
+
+O valor `inherit` indica para o elemento filho que ele deve utilizar o mesmo valor presente no elemento pai, sendo assim, toda vez que o tamanho do elemento pai for alterado, automaticamente o elemento filho herdará o novo valor, facilitando assim, a manutenção do código.
