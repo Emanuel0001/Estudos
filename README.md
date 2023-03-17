@@ -545,7 +545,6 @@ RESTful, é a aplicação dos padrões REST.
 
     O servidor detectou um looping infinito ao processar a requisição.
 ### 510 Not Extended
-
     Exigem-se extensões posteriores à requisição para o servidor atendê-la.
 ### 511 Network Authentication Required
 
