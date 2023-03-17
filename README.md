@@ -547,7 +547,6 @@ RESTful, é a aplicação dos padrões REST.
 ### 510 Not Extended
     Exigem-se extensões posteriores à requisição para o servidor atendê-la.
 ### 511 Network Authentication Required
-
     O código de status 511 indica que o cliente precisa se autenticar para ganhar acesso à rede.
 
 
