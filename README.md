@@ -289,6 +289,14 @@ Já os arquivos **binários** são representados por uma sequência de bytes sem
    #### Texto (qualquer arquivo que só armazene texto).txt, .xml, .bat
 #### Binário (possuem uma codificação de bytes especifica) .doc, .exe, .zip 
 
+## fecth API
+
+- um meio natido de realizar requisições a APIS com Javascript;
+- Podemos utilizar com Promise ou Async/await;
+- se a requisição for GET é precio passar apenas a URL do recurso que estamos resgatando da API;
+- Caso seja outro verbo, podemos configurar a requisição com: method, body e headers;
+- O fetch é muito utilizado com framseworks/libs como: React, vue e Angular
+re
 
 ## API# API, REST e RESTFUL
 
@@ -914,3 +922,19 @@ img {
 ```
 
 O valor `inherit` indica para o elemento filho que ele deve utilizar o mesmo valor presente no elemento pai, sendo assim, toda vez que o tamanho do elemento pai for alterado, automaticamente o elemento filho herdará o novo valor, facilitando assim, a manutenção do código.
+
+
+## React com Typescript
+
+### Definição:
+
+-   **TypeScript:**
+    -   TypeScript é uma linguagem de programação de código aberto que estende o JavaScript adicionando tipos estáticos opcionais. Esses tipos fornecem uma camada adicional de segurança e ferramentas para desenvolvedores durante o desenvolvimento de software.
+    
+-   Funciona a pasta public;
+   A pasta `public` em projetos React serve como um diretório para armazenar recursos estáticos, como imagens, arquivos de fontes e outros ativos que não precisam ser processados pelo sistema de build.
+-   O que é JSX;
+ JSX é uma extensão de sintaxe do JavaScript que permite escrever código em uma sintaxe similar a XML/HTML. Ele é comumente usado em React para definir a estrutura e a aparência dos componentes.
+ 
+ - Metodo map
+  O método `map` é uma função de array em JavaScript que permite iterar sobre cada elemento de um array e aplicar uma função a cada elemento, retornando um novo array com os resultados.
