@@ -1,6 +1,6 @@
 import "./Formulario.css";
 import CampoTexto from "../CampoTexto";
-import Botao from "../Botao";
+import Botao from "../Button";
 import { useState } from "react";
 
 const Form = (props) => {
