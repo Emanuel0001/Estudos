@@ -1,5 +1,20 @@
 
+# Resumo do Git e Seu Funcionamento:
 
+O Git é um sistema de controle de versão distribuído, projetado para rastrear e gerenciar alterações em projetos de software. Aqui estão os principais conceitos e funcionamentos:
+
+1.  **Repositório:**
+    
+    -   Um repositório Git é uma estrutura que armazena o histórico completo de um projeto.
+2.  **Commits:**
+    
+    -   As alterações no código são registradas como "commits".
+    -   Cada commit possui um identificador único (hash) e uma mensagem descritiva.
+3.  **Branches:**
+    
+    -   Branches são ramificações no histórico do projeto, permitindo o desenvolvimento paralelo.
+    -   A branch principal (geralmente "main") representa a versão estável do código.
+    
 ## Git remote / qual é o remote do meu repositório ?
 
 Um controle remoto no Git é um repositório comum que todos os membros da equipe usam para trocar suas alterações. Na maioria dos casos, esse repositório remoto é armazenado em um serviço de hospedagem de código como o GitHub ou em um servidor interno. Ao contrário de um repositório local, um remoto normalmente não fornece uma árvore de arquivos do estado atual do projeto.
@@ -8,17 +23,17 @@ origin git@github.com:Emanuel0001/sistema-de-usuario.git (fetch)
 
 origin git@github.com:Emanuel0001/sistema-de-usuario.git (push)
 
-## lista de Comandos
+# lista de comandos do Git
 
-**1. Inicializar um Novo Repositório Git:**
+## **1. Inicializar um Novo Repositório Git:**
 
 bashCopy code
 
-`git init` 
+    `git init` 
 
 Este comando cria um novo repositório Git no diretório local, preparando-o para o controle de versão.
 
-**2. Adicionar Alterações ao Índice:**
+##  **2. Adicionar Alterações ao Índice:**
 
 bashCopy code
 
@@ -28,7 +43,7 @@ bashCopy code
 
 Adiciona todas as alterações no diretório de trabalho ao índice, facilitando a preparação para o próximo commit.
 
-**3. Verificar o Estado Atual do Repositório:**
+##  **3. Verificar o Estado Atual do Repositório:**
 
 bashCopy code
 
@@ -36,7 +51,7 @@ bashCopy code
 
 Mostra o estado atual das mudanças no repositório, destacando arquivos modificados, adicionados ou não rastreados.
 
-**4. Realizar o Primeiro Commit:**
+##  **4. Realizar o Primeiro Commit:**
 
 bashCopy code
 
@@ -45,7 +60,7 @@ bashCopy code
 
 Realiza um commit de todas as alterações adicionadas ao índice, fornecendo uma mensagem descritiva.
 
-**5. Adicionar um Repositório Remoto:**
+##  **5. Adicionar um Repositório Remoto:**
 
 bashCopy code
 
@@ -53,7 +68,7 @@ bashCopy code
 
 Adiciona um repositório remoto chamado "origin" com o URL fornecido.
 
-**6. Renomear a Branch Principal:**
+##  **6. Renomear a Branch Principal:**
 
 bashCopy code
 
@@ -61,7 +76,7 @@ bashCopy code
 
 Renomeia a branch principal para "main".
 
-**7. Enviar Alterações para o Repositório Remoto:**
+##  **7. Enviar Alterações para o Repositório Remoto:**
 
 bashCopy code
 
@@ -69,7 +84,7 @@ bashCopy code
 
 Envia as alterações ao repositório remoto, definindo "main" como a branch padrão.
 
-**8. Criar e Mudar para uma Nova Branch:**
+## **8. Criar e Mudar para uma Nova Branch:**
 
 bashCopy code
 
@@ -77,7 +92,7 @@ bashCopy code
 
 Cria e muda para uma nova branch com o nome especificado.
 
-**9. Enviar uma Nova Branch para o Repositório Remoto:**
+##  **9. Enviar uma Nova Branch para o Repositório Remoto:**
 
 bashCopy code
 
@@ -87,7 +102,7 @@ bashCopy code
 
 Envia a branch local "style/correcao-e-estilizacao" para o repositório remoto e a define como upstream.
 
-**10. Mudar para a Branch Principal:**
+##  **10. Mudar para a Branch Principal:**
 
 bashCopy code
 
@@ -95,7 +110,7 @@ bashCopy code
 
 Muda para a branch principal "main".
 
-**11. Listar Todas as Branches:**
+##  **11. Listar Todas as Branches:**
 
 bashCopy code
 
@@ -103,7 +118,7 @@ bashCopy code
 
 Lista todas as branches no repositório, destacando a branch atual.
 
-**12. Realizar Merge de uma Branch:**
+##  **12. Realizar Merge de uma Branch:**
 
 bashCopy code
 
@@ -111,7 +126,7 @@ bashCopy code
 
 Realiza o merge da branch "style/correcao-e-estilizacao" na branch atual.
 
-**13. Atualizar o Repositório Local com Alterações Remotas:**
+##  **13. Atualizar o Repositório Local com Alterações Remotas:**
 
 bashCopy code
 
@@ -119,7 +134,7 @@ bashCopy code
 
 Atualiza o repositório local com as mudanças do repositório remoto.
 
-**14. Clonar um Repositório Remoto:**
+## **14. Clonar um Repositório Remoto:**
 
 bashCopy code
 
@@ -127,7 +142,7 @@ bashCopy code
 
 Clona um repositório remoto para um diretório local especificado.
 
-**15. Remover Arquivos Não Rastreados do Diretório de Trabalho:**
+##  **15. Remover Arquivos Não Rastreados do Diretório de Trabalho:**
 
 bashCopy code
 
@@ -135,7 +150,7 @@ bashCopy code
 
 Remove forçadamente arquivos não rastreados do diretório de trabalho.
 
-**16. Desfazer Alterações Não Confirmadas em um Arquivo:**
+##  **16. Desfazer Alterações Não Confirmadas em um Arquivo:**
 
 bashCopy code
 
@@ -143,10 +158,11 @@ bashCopy code
 
 Desfaz as alterações não confirmadas no arquivo "index.html".
 
-**17. Exibir o Histórico de Commits:**
+## **17. Exibir o Histórico de Commits:**
 
 bashCopy code
 
     `git log` 
 
 Exibe o histórico de commits do repositório, detalhando informações como autor, data e mensagem de commit.
+
