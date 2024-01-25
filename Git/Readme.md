@@ -14,7 +14,7 @@ O Git é um sistema de controle de versão distribuído, projetado para rastrear
     
     -   Branches são ramificações no histórico do projeto, permitindo o desenvolvimento paralelo.
     -   A branch principal (geralmente "main") representa a versão estável do código.
-    
+
 ## Git remote / qual é o remote do meu repositório ?
 
 Um controle remoto no Git é um repositório comum que todos os membros da equipe usam para trocar suas alterações. Na maioria dos casos, esse repositório remoto é armazenado em um serviço de hospedagem de código como o GitHub ou em um servidor interno. Ao contrário de um repositório local, um remoto normalmente não fornece uma árvore de arquivos do estado atual do projeto.
@@ -166,3 +166,49 @@ bashCopy code
 
 Exibe o histórico de commits do repositório, detalhando informações como autor, data e mensagem de commit.
 
+
+## Merge VS REBESE 
+Basicamente o **git merge** e o **git rebase** servem para a mesma coisa: **mesclar alterações de duas branches diferentes**.
+#### Branches oq é?  
+
+
+> Ramificação, em controle de versão e gerenciamento de configuração de software, é a duplicação de um objeto sob controle de versão.
+
+O **merge**, na maioria das vezes, gera um novo commit, o que pode complicar o histórico, mas nunca o reescreve. (mas é mais seguro)
+
+Já o **rebase** deixa o histórico linear e mais simples, mas alguns commits são reescritos, é muito útil para não “sujar” o histórico do repositório (mas possui mais riscos).
+
+
+## Fast-Forward
+
+Move o rótulo da branch master para o commit “feature". Por isso, o nome dessa estratégia é fast forward (em português avanço rápido), pois é simplesmente uma alteração de ponteiro.
+
+## no-fast forward
+
+O --no-ff sinalizador faz com que a mesclagem sempre crie um novo objeto de confirmação, mesmo que a mesclagem possa ser executada com um avanço rápido. Isso evita a perda de informações sobre a existência histórica de uma ramificação de recurso e agrupa todos os commits que juntos adicionaram o recurso.
+A --no-ff opção é útil quando você deseja ter uma noção clara de sua ramificação de recurso. sem --no-ff, é impossível ver no histórico do Git quais dos objetos de confirmação juntos implementaram um recurso, você teria que ler manualmente todas.
+
+  
+  
+  
+  
+
+## Rebese vs squash
+
+**Merge Rebase:** Isso move todo o branch do recurso para começar na ponta do branch master, incorporando efetivamente todos os novos commits no master
+
+Master A → B → C -->(F) → (G)
+
+Feature A → B → C --> (D) → (E)
+
+MASTER A → B → C → (F) → (G) → (D) → (E)
+
+O **rebase** deixa o histórico linear e mais simples, mas alguns commits são reescritos, é muito útil para não “sujar” o histórico do repositório (mas possui mais riscos).
+
+**Merge Squash:** mantém as alterações, mas omite os commits individuais do histórico
+
+Master A → B → C
+
+Feature A → B → C (D) → (E) |
+
+MASTER A → B → C → (F)
